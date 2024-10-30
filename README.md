@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# E-Commerce Platform with Razorpay Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+An interactive e-commerce platform built with React, featuring a Razorpay payment gateway integration, a product catalog, shopping cart, and checkout functionality. The platform provides a seamless shopping experience and efficient cart management.
 
-In the project directory, you can run:
+## Features
+- **Product List**: Browse through products with detailed views and add to cart functionality.
+- **Product Details**: View detailed descriptions, pricing, and images.
+- **Shopping Cart**: Add, remove, and adjust quantities of products in the cart.
+- **Checkout**: Enter user information and proceed to payment via Razorpay.
+- **Order Confirmation**: Post-payment order confirmation page showing order ID and payment status.
 
-### `npm start`
+## Tech Stacks
+  - React
+  - React router
+  - Axios
+  - Tailwind CSS
+  - Razorpay Integration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+1. **Product/Home Page**
+![Screenshot 2024-10-30 205637](https://github.com/user-attachments/assets/d7f2f987-5ce4-4fe3-b584-52ad9fcde68a)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Product Detail Page**
+![Screenshot 2024-10-30 205646](https://github.com/user-attachments/assets/f6e1dd52-2079-4d77-a830-3a636743abe0)
 
-### `npm run build`
+3. **Cart Page**
+![Screenshot 2024-10-30 205658](https://github.com/user-attachments/assets/2806d92c-43d7-4b72-9d14-3dada98c4a9d)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Checkout Page**
+![Screenshot 2024-10-30 205728](https://github.com/user-attachments/assets/4a1dc11f-1b36-4024-8b51-577c237e40e1)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot 2024-10-30 205747](https://github.com/user-attachments/assets/190500df-94ee-456e-8380-5ebc91b738a9)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 2024-10-30 205825](https://github.com/user-attachments/assets/9d8b3448-f7a1-413a-995e-a342daf7bfeb)
 
-### `npm run eject`
+![Screenshot 2024-10-30 205836](https://github.com/user-attachments/assets/38755082-b77e-4e18-bef8-16a9dd063098)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot 2024-10-30 205900](https://github.com/user-attachments/assets/c817cef6-0be6-48bf-a419-1eb376d652b6)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screenshot 2024-10-30 205908](https://github.com/user-attachments/assets/ce12b868-e69c-4bc4-bf29-f228b3c01685)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Confirmation Page**
+![Screenshot 2024-10-30 205913](https://github.com/user-attachments/assets/4ec426c4-f1b9-4971-827c-3a539e838ff8)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Prerequisites
+- Node.js (v14 or higher)
+- npm or Yarn
 
-### Code Splitting
+## Installation
+1. **Clone the repository**
+   
+ ```bash
+   git clone https://github.com/srudhi6383/razorpay-integration.git
+   cd razorpay-integration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Install dependencies**
 
-### Analyzing the Bundle Size
+ ``` bash
+    npm install
+     or
+    yarn install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Environment Setup**
+   - Create a ```.env``` file in the root directory
+   - Add the following environment variables
 
-### Making a Progressive Web App
+     ``` bash
+         REACT_APP_RAZORPAY_KEY=your_razorpay_key
+         REACT_APP_API_BASE_URL=your_api_base_url
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ 4. **Run the application**
+     
+       ``` npm start ```
 
-### Advanced Configuration
+5. **Usage**
+  - **Product Browsing**: Navigate to the product list to view and select items.
+  - **Cart Management**: Add items to your cart and adjust quantities.
+  - **Checkout and Payment**: Complete your purchase using the Razorpay integration.
+  - **Order Confirmation**: Receive a confirmation screen post-payment, showing order details. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   
